@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sócio Falecido em LTDA (2025) | Sucessão de Quotas, Direitos dos Herdeiros e Continuidade</title>
+  <meta name="description" content="Quando um sócio falece em LTDA: art. 1.028 do Código Civil, sucessão de quotas, prazos, direitos dos herdeiros e como preservar a continuidade da empresa. Conteúdo informativo conforme Prov. 205/2021 OAB." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Spectral:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      /* Paleta corporativa */
+      --bg: #F5F8FE;
+      --surface: #FFFFFF;
+      --ink: #1F2A44;          /* texto principal */
+      --muted: #5F6B86;        /* texto secundário */
+      --brand: #1B365D;        /* azul Marinho Mendes */
+      --accent: #00A86B;       /* CTA */
+      --line: #E3ECF7;         /* linhas sutis */
+      --shadow: 0 14px 38px rgba(17,35,73,.08);
+      --radius: 16px;
+      --wrap: 1160px;
+      --h1: clamp(28px,3.6vw,46px);
+      --h2: clamp(22px,2.4vw,32px);
+      --body: clamp(16px,1.1vw,18px);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font: var(--body)/1.65 Inter,system-ui,Segoe UI,Arial,sans-serif;color:var(--ink);background:linear-gradient(180deg,var(--bg) 0%,#fff 40%)}
+    a{color:var(--brand);text-decoration:none}
+    img{max-width:100%;display:block}
+    .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+
+    /* HEADER com menu na mesma linha da logo */
+    header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.95);backdrop-filter:saturate(130%) blur(8px);border-bottom:1px solid var(--line)}
+    .header-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:46px}
+
+    nav ul{display:flex;gap:6px;list-style:none;padding:0;margin:0}
+    nav a{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:12px;font-weight:700;color:#23345e;letter-spacing:.2px}
+    nav a:hover{background:#f1f5ff}
+    nav a.active{color:#0e1d47;background:#e8f0ff}
+
+    .top-actions{display:flex;gap:10px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 14px;border-radius:12px;border:1px solid transparent;font-weight:700;letter-spacing:.2px;transition:transform .15s ease, box-shadow .15s ease}
+    .btn:active{transform:translateY(1px)}
+    .btn-primary{background:linear-gradient(135deg,var(--accent),#05b97b);color:#fff;box-shadow:0 12px 26px rgba(0,168,107,.22)}
+    .btn-ghost{background:#fff;border-color:var(--line);color:#2a3b67}
+
+    /* HERO */
+    .hero{padding:56px 0 34px}
+    .hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}
+    .hero h1{font-family:"Spectral",serif;font-size:var(--h1);line-height:1.15;margin:0;color:#16274a}
+    .lead{color:#2a3552;margin:10px 0 18px}
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+  .img-ph{border:none;background:none;display:flex;align-items:center;justify-content:center;text-align:center;color:#5b6c94;padding:0;box-shadow:none}
+    .img-ph small{font-weight:700;color:#2a3b67}
+    .img-ph .size{font:12px ui-monospace,Menlo,monospace;color:#7b8bb6;margin-top:6px}
+
+    section{padding:44px 0}
+    .section-title{font-family:"Spectral",serif;font-size:var(--h2);color:#15223e;margin:0 0 10px}
+
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+    .grid{display:grid;gap:20px}
+    .cols-2{grid-template-columns:1fr 1fr}
+    .cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+
+    /* Lista marcada */
+    .checklist{list-style:none;padding:0;margin:8px 0}
+    .checklist li{display:flex;gap:10px;margin:8px 0;align-items:flex-start}
+    .checklist svg{flex:0 0 18px;color:#10b981;margin-top:2px}
+
+    /* Linha do tempo */
+    .timeline{position:relative;padding-left:26px}
+    .timeline::before{content:"";position:absolute;left:10px;top:0;bottom:0;width:2px;background:linear-gradient(#a2b6ff,#d8e2ff)}
+    .tl-item{position:relative;margin:8px 0;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+    .tl-item::before{content:"";position:absolute;left:-4px;top:16px;width:10px;height:10px;border-radius:999px;background:#5B8DEF;border:2px solid #fff;box-shadow:0 0 0 2px #dfe9ff}
+
+    /* FAQ reforçado */
+    details{border:1px solid var(--line);border-radius:12px;background:#fff;padding:14px}
+    details+details{margin-top:12px}
+    details[open]{border-color:#cdd9f9;box-shadow:0 8px 20px rgba(91,141,239,.08)}
+    summary{cursor:pointer;font-weight:800;color:#1f2a44}
+
+    /* Contato */
+    form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    label{font-weight:700;color:#24345f;margin-bottom:6px;display:block}
+    input,select,textarea{width:100%;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font:16px/1.5 Inter,Arial,sans-serif;color:var(--ink);outline:none;transition:box-shadow .18s ease,border-color .18s ease}
+    input:focus,select:focus,textarea:focus{border-color:#5B8DEF;box-shadow:0 0 0 5px rgba(91,141,239,.16)}
+    textarea{min-height:120px;resize:vertical}
+
+    /* Checkbox/consentimento compacto */
+    .consent{display:flex;gap:10px;align-items:flex-start;padding:8px 0;margin-top:6px;border:none;background:transparent;font-size:14px;color:#495876}
+    .consent input[type="checkbox"]{width:18px;height:18px;margin-top:2px;accent-color:var(--brand)}
+
+    /* Rodapé claro com contraste */
+    footer{background:#fff;border-top:1px solid var(--line);color:#2a3448}
+    .footer-grid{display:grid;gap:22px;grid-template-columns:2fr 1fr 1fr}
+    .socials{display:flex;gap:10px}
+    .socials a{display:inline-flex;width:38px;height:38px;border-radius:999px;border:1px solid var(--line);align-items:center;justify-content:center;background:#fff}
+
+    /* WhatsApp flutuante */
+    .wa-float{position:fixed;right:18px;bottom:18px;z-index:80;display:inline-flex;width:58px;height:58px;border-radius:999px;background:#25D366;box-shadow:0 12px 26px rgba(31,122,83,.35);align-items:center;justify-content:center}
+    .wa-float svg{color:#fff}
+
+    /* Responsivo */
+    @media (max-width: 980px){
+      .hero .grid,.cols-2{grid-template-columns:1fr}
+      nav ul{display:none}
+    }
+    @media (max-width: 640px){
+      form .row{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="wrap header-row">
+      <a href="#topo" class="brand" aria-label="Página inicial">
+  <img src="img/Logo5.jpg" alt="Marinho Mendes Advocacia" style="height:71.88px"/>
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="#lei">Lei</a></li>
+          <li><a href="#contrato">Contrato</a></li>
+          <li><a href="#caminhos">Caminhos</a></li>
+          <li><a href="#prazos">Prazos</a></li>
+          <li><a href="#herdeiros">Herdeiros</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="top-actions">
+        <a class="btn btn-primary" href="https://wa.me/5519974100605" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="topo" class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="grid">
+        <div>
+          <h1>Sócio Falecido em LTDA: sucessão de quotas, direitos dos herdeiros e continuidade da empresa em 2025</h1>
+          <p class="lead">Saiba o que ocorre quando um sócio falece em sociedade limitada. Entenda o que diz a lei (art. 1.028 CC), prazos, papel do contrato social e os caminhos para preservar o negócio — com linguagem clara e <strong>em conformidade com o Provimento 205/2021 da OAB</strong>.</p>
+          <div class="actions">
+            <a class="btn btn-ghost" href="#contato">Solicitar análise do caso</a>
+            <a class="btn btn-ghost" href="https://www.marinhomendes.adv.br/blog/socio-falecido/" target="_blank" rel="noopener">📖 Ver matéria no Blog</a>
+          </div>
+          <div class="card" style="margin-top:14px;border-left:4px solid var(--accent);color:#0b3e2a;background:#f1fff7">Conteúdo informativo. Sem promessa de resultado. Honorários definidos em contrato (Provimento 205/2021, OAB).</div>
+        </div>
+        <div class="img-ph" aria-label="Imagem hero">
+          <img src="img/Captura de tela 2025-09-05 152303.png" alt="Imagem de capa (tema societário)" style="border-radius:14px;box-shadow:var(--shadow);width:156.25%">
+        </div>
+      </div>
+    </section>
+
+    <!-- LEI -->
+    <section id="lei">
+      <h2 class="section-title">1) O que a Lei diz (art. 1.028 do Código Civil)</h2>
+      <div class="card">
+        <p><strong>Regra:</strong> liquidação da quota do sócio falecido. <strong>Exceções:</strong> (i) contrato dispuser de modo diverso; (ii) sócios remanescentes optarem pela dissolução; (iii) acordo com os herdeiros para substituição do sócio.</p>
+        <div class="img-ph" style="margin-top:10px">
+          <img src="img/laptop-3196481_1280.jpg" alt="Fluxograma do art. 1.028" style="border-radius:14px;width:56.26%">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTRATO -->
+    <section id="contrato">
+      <h2 class="section-title">2) A importância do contrato social</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Cláusulas que trazem segurança</h3>
+          <ul class="checklist">
+            <li><svg viewBox="0 0 24 24" width="18" height="18"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Entrada automática de herdeiros (quando conveniente).</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Direito de preferência dos sócios remanescentes.</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Regras para evitar dissolução e preservar a gestão.</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Critérios de apuração de haveres e forma de pagamento.</li>
+          </ul>
+        </div>
+        <div class="img-ph" aria-label="Imagem como analisar contrato">
+          <img src="img/firm-2003808_1280.jpg" alt="Como analisar o contrato" style="border-radius:14px;box-shadow:var(--shadow);width:156.25%">
+        </div>
+      </div>
+    </section>
+
+    <!-- CAMINHOS -->
+    <section id="caminhos">
+      <h2 class="section-title">3) O que pode acontecer após o óbito</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>Liquidação da quota</h3><p>Apuração de haveres e <strong>pagamento aos herdeiros</strong>. A sociedade segue com os remanescentes.</p></div>
+        <div class="card"><h3>Admissão de herdeiros</h3><p>Entrada depende de <strong>previsão contratual</strong> e concordância dos sócios.</p></div>
+        <div class="card"><h3>Dissolução parcial</h3><p>Encerramento parcial mediante deliberação, preservando a continuidade possível.</p></div>
+      </div>
+    </section>
+
+    <!-- PRAZOS -->
+    <section id="prazos">
+      <h2 class="section-title">4) Prazos e procedimentos essenciais</h2>
+      <div class="timeline">
+        <div class="tl-item"><strong>Até 60 dias:</strong> regularizar (entrada de herdeiros, liquidação da quota ou dissolução parcial) e <strong>averbar</strong> nos órgãos competentes.</div>
+        <div class="tl-item"><strong>Apuração de haveres:</strong> conforme contrato; se ausente, por <em>balanço especial</em> (ou de determinação) ou avaliação judicial.</div>
+        <div class="tl-item"><strong>Pagamento aos herdeiros:</strong> até <strong>90 dias</strong> após a apuração, salvo acordo diverso.</div>
+      </div>
+    </section>
+
+    <!-- HERDEIROS -->
+    <section id="herdeiros">
+      <h2 class="section-title">5) Herdeiros: participantes ou credores?</h2>
+      <div class="card">
+        <ul class="checklist">
+          <li><svg viewBox="0 0 24 24" width="18" height="18"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Não ingressam automaticamente como sócios — salvo cláusula contratual.</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Sem acordo, herdeiros são <strong>credores de haveres</strong>.</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Não assumem responsabilidades societárias pretéritas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <h2 class="section-title">FAQ – Perguntas frequentes</h2>
+      <details><summary>1) Os herdeiros viram sócios automaticamente?</summary><p>Não. A entrada depende de <strong>previsão contratual</strong> (cláusula de sucessão/entrada de herdeiros) e do <strong>consentimento</strong> dos remanescentes. Sem acordo, ocorre a <strong>liquidação da quota</strong> com pagamento de haveres ao espólio/herdeiros.</p></details>
+      <details><summary>2) Qual o prazo para regularização?</summary><p>Como boa prática societária, recomenda-se <strong>deliberar em até 60 dias</strong> do óbito (assembleia/reunião), com a consequente <strong>averbação</strong> na Junta Comercial e atualização do e-CNPJ/representantes para evitar bloqueios operacionais.</p></details>
+      <details><summary>3) Como são apurados e pagos os haveres?</summary><p>Prevalece o que estiver no <strong>contrato social</strong>. Na omissão, utiliza-se <em>balanço especial</em> (ou de determinação), por data de referência próxima ao falecimento, com avaliação contábil independente. O <strong>pagamento</strong> costuma ocorrer em até <strong>90 dias</strong> após a apuração, salvo cláusula ou acordo diferente.</p></details>
+      <details><summary>4) É necessário inventário?</summary><p>Sim. A transmissão das quotas decorre da sucessão causa mortis e deve constar do <strong>inventário</strong>. Contudo, o direito dos herdeiros a <strong>haveres</strong> pode ser apurado/negociado mesmo antes da partilha, conforme o caso.</p></details>
+      <details><summary>5) Existe responsabilidade dos herdeiros por dívidas?</summary><p>Herdeiros que <em>não ingressam</em> como sócios são <strong>credores</strong> e, em regra, não assumem responsabilidades societárias. Se <em>ingressarem</em>, passam a sujeitar-se às regras do contrato e do Código Civil, inclusive quanto a deliberações e, se for o caso, à exclusão por falta grave.</p></details>
+      <details><summary>6) O contrato prevê sucessão automática. O que observar?</summary><p>Verifique <strong>condições</strong> (ex.: maioridade, capacidade, qualificação técnica), <strong>direito de preferência</strong> dos remanescentes e <strong>critérios de avaliação</strong>. A implementação exige alteração contratual e registro na Junta.</p></details>
+      <details><summary>7) Como evitar disputas?</summary><p>Adote cláusulas claras (preferência, avaliação, parcelamento), delibere rapidamente, registre tudo e mantenha <strong>transparência</strong> com os herdeiros. A mediação pode ser útil para acordos céleres.</p></details>
+    </section>
+
+    <!-- LEIA TAMBÉM -->
+    <section id="leia">
+      <h2 class="section-title">Leia também</h2>
+      <div class="grid cols-3">
+  <a class="card" href="https://www.marinhomendes.adv.br/blog/inventario-em-2025/" target="_blank" rel="noopener"><strong>Inventário em 2025</strong><p>Como organizar a sucessão patrimonial.</p><div class="img-ph"><img src="img/Captura de tela 2025-09-05 152259.png" alt="Thumb 1" style="border-radius:10px;width:156.25%"></div></a>
+  <a class="card" href="https://www.marinhomendes.adv.br/blog/exclusao-de-socios/" target="_blank" rel="noopener"><strong>Exclusão de sócios</strong><p>Quando é juridicamente possível.</p><div class="img-ph"><img src="img/Captura de tela 2025-09-05 152248.png" alt="Thumb 2" style="border-radius:10px;width:156.25%"></div></a>
+  <a class="card" href="https://www.marinhomendes.adv.br/blog/direito-societario/" target="_blank" rel="noopener"><strong>Direito societário</strong><p>Visão estratégica para empresas.</p><div class="img-ph"><img src="img/Captura de tela 2025-09-05 152241.png" alt="Thumb 3" style="border-radius:10px;width:156.25%"></div></a>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+      <h2 class="section-title">Fale com o escritório</h2>
+      <div class="grid cols-2">
+        <form id="leadForm" class="card" novalidate>
+          <div class="row">
+            <div>
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+            </div>
+            <div>
+              <label for="email">E‑mail</label>
+              <input id="email" name="email" type="email" placeholder="seu@email.com" required />
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <label for="tel">Telefone/WhatsApp</label>
+              <input id="tel" name="tel" type="tel" inputmode="tel" placeholder="(DDD) 90000‑0000" required />
+            </div>
+            <div>
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto">
+                <option value="Sucessão em LTDA">Sucessão em LTDA</option>
+                <option value="Apuração de haveres">Apuração de haveres</option>
+                <option value="Inventário e societário">Inventário e societário</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="msg">Mensagem</label>
+            <textarea id="msg" name="mensagem" placeholder="Conte resumidamente sua situação"></textarea>
+          </div>
+          <label class="consent">
+            <input type="checkbox" required />
+            <span>Li a <a href="#">Política de Privacidade</a> e autorizo o contato para fins exclusivamente profissionais.</span>
+          </label>
+          <div style="display:flex;gap:10px;margin-top:8px">
+            <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+            <a class="btn btn-ghost" href="https://wa.me/5519974100605" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          </div>
+          <small style="color:#616a7c">Atendimento: 08:30–18:00 (dias úteis) • Tel.: <a href="tel:+551938454946">(19) 3845‑4946</a> • E‑mail: <a href="mailto:adm@marinhomendes.adv.br">adm@marinhomendes.adv.br</a> • Site: <a href="https://www.marinhomendes.adv.br/" target="_blank">marinhomendes.adv.br</a></small>
+        </form>
+        <aside>
+          <div class="img-ph" aria-label="Foto institucional / equipe">
+            <img src="img/Captura de tela 2025-09-05 152226.png" alt="Foto institucional / equipe" style="border-radius:14px;box-shadow:var(--shadow);width:156.25%">
+          </div>
+          <div class="card" style="margin-top:12px">
+            <h3 style="margin:0 0 8px;color:#1b2a4d">Sobre o escritório</h3>
+            <p>Marinho Mendes Sociedade de Advogados atua com ética e excelência técnica, oferecendo consultoria e contencioso em Direito Societário, Empresarial e Previdenciário. Atendimento nacional e comunicação transparente.</p>
+            <ul class="checklist" style="margin-top:6px">
+              <li><svg viewBox="0 0 24 24" width="18" height="18"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Foco em governança e continuidade de empresas familiares.</li>
+              <li><svg viewBox="0 0 24 24" width="18" height="18"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Atuação integrada: societário, sucessório e previdenciário.</li>
+              <li><svg viewBox="0 0 24 24" width="18" height="18"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Atendimento: 08:30–18:00 (dias úteis) • Tel.: (19) 3845‑4946</li>
+            </ul>
+          </div>
+          <p style="margin-top:10px;color:#555">Canais oficiais:</p>
+          <div class="socials">
+            <a href="https://www.facebook.com/marinhomendesadv" target="_blank" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z" stroke="#1B365D"/></svg>
+            </a>
+            <a href="https://www.instagram.com/marinhomendesadv" target="_blank" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#1B365D"/><circle cx="12" cy="12" r="4" stroke="#1B365D"/><circle cx="17.5" cy="6.5" r="1" fill="#1B365D"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/marinho-mendes/" target="_blank" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.94 8.5v10H3.5v-10h3.44ZM5.22 3.5a2.06 2.06 0 1 1 0 4.12 2.06 2.06 0 0 1 0-4.12ZM20.5 13.06V18.5h-3.44v-4.62c0-1.1-.02-2.52-1.54-2.52-1.55 0-1.8 1.21-1.8 2.44v5.2H10.3v-10h3.3v1.37h.05c.46-.87 1.59-1.8 3.27-1.8 3.5 0 3.58 2.3 3.58 4.43Z" stroke="#1B365D"/></svg>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap" style="padding:22px 0 34px">
+      <div class="footer-grid">
+        <div>
+          <strong>Marinho Mendes Sociedade de Advogados</strong>
+          <p>Atuação ética e técnica para resguardar a continuidade e a governança das empresas familiares e societárias.</p>
+          <small style="color:#6a7285">Conteúdo informativo, sem promessa de resultado, conforme Provimento 205/2021 da OAB. Honorários definidos em contrato.</small>
+        </div>
+        <div>
+          <h4>Mapa</h4>
+          <ul style="list-style:none;padding:0;margin:8px 0">
+            <li><a href="#lei">Lei</a></li>
+            <li><a href="#contrato">Contrato</a></li>
+            <li><a href="#prazos">Prazos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <ul style="list-style:none;padding:0;margin:8px 0">
+            <li>Site: <a href="https://www.marinhomendes.adv.br/" target="_blank">marinhomendes.adv.br</a></li>
+            <li>Telefone: <a href="tel:+551938454946">(19) 3845‑4946</a></li>
+            <li>E‑mail: <a href="mailto:adm@marinhomendes.adv.br">adm@marinhomendes.adv.br</a></li>
+            <li>WhatsApp: <a href="https://wa.me/5519974100605" target="_blank">(19) 97410‑0605</a></li>
+          </ul>
+        </div>
+      </div>
+      <p style="color:#6a7285;font-size:12px;margin-top:8px">© 2025 Marinho Mendes Advocacia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5519974100605" class="wa-float" aria-label="Fale no WhatsApp" title="Fale conosco no WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.52 3.48A11.9 11.9 0 0 0 12.03 0C5.45.03.11 5.38.14 11.96c.01 2.1.56 4.14 1.58 5.95L0 24l6.25-1.63a12 12 0 0 0 5.75 1.47h.05c6.58-.03 11.92-5.38 11.95-11.95A11.9 11.9 0 0 0 20.52 3.48Zm-8.49 18.4h-.04a9.98 9.98 0 0 1-5.08-1.39l-.36-.21-3.71.97.99-3.62-.24-.37a10.03 10.03 0 0 1-1.55-5.36C2.99 6.5 7.5 1.99 12.99 2h.04c2.67 0 5.18 1.04 7.07 2.93a9.93 9.93 0 0 1 2.92 7.1c-.02 5.5-4.53 9.91-9.99 9.85Zm5.75-7.46c-.31-.16-1.86-.92-2.14-1.02-.29-.11-.5-.16-.71.16-.21.31-.82 1.01-1 1.21-.18.19-.37.21-.69.05-.31-.16-1.33-.49-2.53-1.56-.94-.83-1.57-1.86-1.75-2.17-.18-.31-.02-.47.14-.63.14-.14.31-.37.47-.55.16-.18.21-.31.32-.53.11-.21.05-.39-.03-.55-.08-.16-.71-1.7-.97-2.33-.26-.63-.52-.55-.71-.56l-.6-.01c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.64s1.13 3.06 1.29 3.27c.16.21 2.23 3.4 5.4 4.77.75.32 1.34.5 1.8.64.76.24 1.46.21 2.01.13.61-.09 1.86-.76 2.12-1.49.26-.73.26-1.35.18-1.49-.08-.14-.29-.22-.61-.38Z" fill="#fff"/></svg>
+  </a>
+
+  <script>
+    // Scrollspy básico para destacar itens do menu superior
+    const links = Array.from(document.querySelectorAll('nav a[href^="#"]'));
+    const targets = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          links.forEach(l=>l.classList.toggle('active', l.getAttribute('href') === `#${e.target.id}`));
+        }
+      })
+    },{rootMargin:'-50% 0px -45% 0px',threshold:0});
+    targets.forEach(t=>io.observe(t));
+
+    // Submeter formulário e abrir WhatsApp com mensagem
+    const form = document.getElementById('leadForm');
+    if(form){
+      form.addEventListener('submit',(e)=>{
+        e.preventDefault();
+        const fd = new FormData(form);
+        const nome = fd.get('nome')||''; const tel = fd.get('tel')||'';
+        const assunto = fd.get('assunto')||'Sucessão em LTDA';
+        const texto = encodeURIComponent(`Olá, sou ${nome}. Assunto: ${assunto}.
+${fd.get('mensagem')||''}
+Telefone: ${tel}`);
+        window.open(`https://wa.me/5519974100605?text=${texto}`,'_blank');
+      })
+    }
+  </script>
+</body>
+</html>
